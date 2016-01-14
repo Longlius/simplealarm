@@ -45,6 +45,5 @@ int main(void) {
 		}
 	}
 	
-	wav_play(wp);
 	return 0;
 }
