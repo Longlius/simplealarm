@@ -18,7 +18,7 @@ void wav_blit_callback(void *data, Uint8 *stream, int len) {
 }
 
 // function to play sound
-void wav_play(char *wavpath) {
+int wav_play(char *wavpath) {
 	// Initialize SDL
 	if(SDL_Init(SDL_INIT_AUDIO) < 0) {
 		return 1;
@@ -56,4 +56,6 @@ void wav_play(char *wavpath) {
 	// SHUT. DOWN. EVERYTHING!
 	SDL_CloseAudio();
 	SDL_FreeWAV(wav_buffer);
+	
+	return 0;
 }

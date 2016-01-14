@@ -1,6 +1,6 @@
 #ifndef ALARMSOUND_H
 #define ALARMSOUND_H
 
-void wav_play(wavpath);
+int wav_play(char *wavpath);
 
 #endif // ALARMSOUND_H
